@@ -1,0 +1,4 @@
+@EndUserText.label: 'Servicio Catálogo Bebidas'
+define service ZUI_BEBIDAS_14 {
+  expose ZC_BEBIDAS_14 as Bebidas;
+}

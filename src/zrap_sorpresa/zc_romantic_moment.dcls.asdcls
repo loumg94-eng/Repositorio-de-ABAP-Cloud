@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_ROMANTIC_MOMENT'
+@MappingRole: true
+define role ZC_ROMANTIC_MOMENT {
+  grant select on ZC_ROMANTIC_MOMENT
+  where INHERITING CONDITIONS FROM ENTITY ZR_ROMANTIC_MOMENT REPLACING { ROOT WITH _BaseEntity };
+}

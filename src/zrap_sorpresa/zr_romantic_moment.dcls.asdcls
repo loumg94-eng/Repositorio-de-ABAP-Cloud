@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZR_ROMANTIC_MOMENT'
+@MappingRole: true
+define role ZR_ROMANTIC_MOMENT {
+  grant select on ZR_ROMANTIC_MOMENT
+  where TRUE;
+}

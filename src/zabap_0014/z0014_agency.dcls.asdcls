@@ -1,0 +1,10 @@
+@EndUserText.label: 'Access control for agency view 0014'
+@MappingRole: true
+define role Z0014_AGENCY {
+    grant
+        select
+            on
+                Z0014_AGENCY
+                    where
+                        ( agency_id ) = aspect pfcg_auth( /lrn/agcy, /lrn/agcy, actvt = '03' );
+}

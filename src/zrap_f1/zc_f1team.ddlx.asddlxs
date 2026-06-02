@@ -1,0 +1,142 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'TeamID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'TeamID'
+annotate view ZC_F1TEAM with
+{
+  @EndUserText.label: 'TeamID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'TeamID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'TeamID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  TeamID;
+  
+  @EndUserText.label: 'TeamName'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'TeamName'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'TeamName'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  TeamName;
+  
+  @EndUserText.label: 'EngineSupplier'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'EngineSupplier'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'EngineSupplier'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  EngineSupplier;
+  
+  @EndUserText.label: 'Nationality'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Nationality'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Nationality'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Nationality;
+  
+  @EndUserText.label: 'ActiveFlag'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'ActiveFlag'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'ActiveFlag'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  ActiveFlag;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  LocalLastChanged;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  LastChangedAt;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  LastChangedBy;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 100 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: '_BaseEntity'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  _BaseEntity;
+}

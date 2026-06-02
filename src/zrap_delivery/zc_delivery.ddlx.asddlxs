@@ -1,0 +1,120 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'NombreRestaurante'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Plato'
+annotate view ZC_DELIVERY with
+{
+  @EndUserText.label: 'Nº Pedido'
+  @UI.facet: [ {
+    label: 'Información del Pedido',
+    id: 'GeneralInfo',
+    purpose: #STANDARD,
+    position: 10 ,
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 ,
+    label: 'Nº Pedido'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 ,
+    label: 'Nº Pedido'
+  },
+  {
+    type: #FOR_ACTION,
+    dataAction: 'aplicar_descuento',
+    label: 'Aplicar Descuento 10%'
+  },
+  {
+    type: #FOR_ACTION,
+    dataAction: 'cambiar_platforma',
+    label: 'Cambiar Plataforma'
+  } ]
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  NumeroPedido;
+
+  @EndUserText.label: 'Fecha Pedido'
+  @UI.identification: [ { position: 20, label: 'Fecha Pedido' } ]
+  @UI.lineItem: [ { position: 20, label: 'Fecha Pedido' } ]
+  @UI.selectionField: [ { position: 20 } ]
+  FechaPedido;
+
+  @EndUserText.label: 'Hora Pedido'
+  @UI.identification: [ { position: 30, label: 'Hora Pedido' } ]
+  @UI.lineItem: [ { position: 30, label: 'Hora Pedido' } ]
+  HoraPedido;
+
+  @EndUserText.label: 'Restaurante'
+  @UI.identification: [ { position: 40, label: 'Restaurante' } ]
+  @UI.lineItem: [ { position: 40, label: 'Restaurante' } ]
+  @UI.selectionField: [ { position: 30 } ]
+  NombreRestaurante;
+
+  @EndUserText.label: 'Plato'
+  @UI.identification: [ { position: 50, label: 'Plato' } ]
+  @UI.lineItem: [ { position: 50, label: 'Plato' } ]
+  @UI.selectionField: [ { position: 40 } ]
+  Plato;
+
+  @EndUserText.label: 'Plataforma'
+  @UI.identification: [ { position: 60, label: 'Plataforma' } ]
+  @UI.lineItem: [ { position: 60, label: 'Plataforma' } ]
+  @UI.selectionField: [ { position: 50 } ]
+  Platforma;
+
+  @EndUserText.label: 'Precio'
+  @UI.identification: [ { position: 70, label: 'Precio' } ]
+  @UI.lineItem: [ { position: 70, label: 'Precio' } ]
+  Precio;
+
+  @EndUserText.label: 'Propinas'
+  @UI.identification: [ { position: 80, label: 'Propinas' } ]
+  @UI.lineItem: [ { position: 80, label: 'Propinas' } ]
+  Propinas;
+
+  @EndUserText.label: 'Tiempo Entrega (min)'
+  @UI.identification: [ { position: 90, label: 'Tiempo Entrega (min)' } ]
+  @UI.lineItem: [ { position: 90, label: 'Tiempo Entrega (min)' } ]
+  TiempoEntrega;
+
+  @EndUserText.label: 'Puntuación'
+  @UI.identification: [ { position: 100, label: 'Puntuación' } ]
+  @UI.lineItem: [ { position: 100, label: 'Puntuación' } ]
+  Puntuacion;
+
+  @EndUserText.label: '¿Llegó frío?'
+  @UI.identification: [ { position: 110, label: '¿Llegó frío?' } ]
+  @UI.lineItem: [ { position: 110, label: '¿Llegó frío?' } ]
+  EstaFrio;
+
+  @EndUserText.label: '¿Repetirías?'
+  @UI.identification: [ { position: 120, label: '¿Repetirías?' } ]
+  @UI.lineItem: [ { position: 120, label: '¿Repetirías?' } ]
+  Repetirias;
+
+  @EndUserText.label: 'URL Foto'
+  @UI.identification: [ { position: 130, label: 'URL Foto' } ]
+  UrlFoto;
+
+  @EndUserText.label: 'Notas'
+  @UI.identification: [ { position: 140, label: 'Notas' } ]
+  Notas;
+
+  @UI.hidden: true
+  CreadoPor;
+
+  @UI.hidden: true
+  HoraCreacion;
+
+  @UI.hidden: true
+  UltimoCambioPor;
+
+  @UI.hidden: true
+  HoraDelCambio;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

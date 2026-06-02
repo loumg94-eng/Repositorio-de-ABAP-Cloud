@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_DW_SERVICIO_DETALLE_14'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_DW_SERVICIO_DETALLE_14'
+  }
+}
+define service ZUI_DW_SERVICIO_DETALLE_14_O4 provider contracts odata_v4_ui {
+  expose ZC_DW_SERVICIO_DETALLE_14;
+}

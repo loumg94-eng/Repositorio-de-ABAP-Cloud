@@ -1,0 +1,4 @@
+@EndUserText.label: 'Servicio RAP Pilotos F1'
+define service ZUI_PILOTS_14 {
+  expose ZC_PILOTS_14 as Pilot;
+}
